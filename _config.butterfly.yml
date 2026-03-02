@@ -91,7 +91,7 @@ click_effect:
 
 # Word Count
 wordcount:
-  enable: true
+  enable: false
   post_wordcount: true
   min2read: true
 
