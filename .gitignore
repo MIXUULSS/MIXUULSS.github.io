@@ -1,8 +1,7 @@
 # Dependencies
 node_modules/
 
-# Hexo generated files
-public/
+# Hexo database file
 db.json/
 
 # IDE files
