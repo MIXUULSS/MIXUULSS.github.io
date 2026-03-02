@@ -1,0 +1,703 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>漫画世界 | LSS的个人博客</title><meta name="author" content="LSS"><meta name="copyright" content="LSS"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="📚 漫画世界这里分享一些优质的漫画作品和在线阅读资源，希望帮你找到喜欢的漫画！ 🆓 免费漫画网站推荐🎌 中文免费漫画网站1. 动漫之家 网址：www.dmzj.com   国内最大漫画平台 资源极其丰富 更新速度快 支持离线下载  2. 哔哩哔哩漫画 网址：manga.bilibili.com   正版授权多 界面体验好 部分免费 社区氛围好  3. 快看漫画 网址：www.kuaikanm">
+<meta property="og:type" content="website">
+<meta property="og:title" content="漫画世界">
+<meta property="og:url" content="https://lssblog.us.kg/manga/index.html">
+<meta property="og:site_name" content="LSS的个人博客">
+<meta property="og:description" content="📚 漫画世界这里分享一些优质的漫画作品和在线阅读资源，希望帮你找到喜欢的漫画！ 🆓 免费漫画网站推荐🎌 中文免费漫画网站1. 动漫之家 网址：www.dmzj.com   国内最大漫画平台 资源极其丰富 更新速度快 支持离线下载  2. 哔哩哔哩漫画 网址：manga.bilibili.com   正版授权多 界面体验好 部分免费 社区氛围好  3. 快看漫画 网址：www.kuaikanm">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://lssblog.us.kg/img/butterfly-icon.png">
+<meta property="article:published_time" content="2025-03-01T04:00:00.000Z">
+<meta property="article:modified_time" content="2026-03-01T14:43:08.128Z">
+<meta property="article:author" content="LSS">
+<meta property="article:tag" content="技术,博客,生活,编程,Hexo">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://lssblog.us.kg/img/butterfly-icon.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://lssblog.us.kg/manga/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.3.4"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.36/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":true,"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":true},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '漫画世界',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'page'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src= "/img/loading.gif" data-lazy-src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></div><div class="menus_item"><a class="site-page" href="/movies/"><i class="fa-fw fas fa-film"></i><span> 电影</span></a></div><div class="menus_item"><a class="site-page" href="/anime/"><i class="fa-fw fas fa-play-circle"></i><span> 动漫</span></a></div><div class="menus_item"><a class="site-page" href="/manga/"><i class="fa-fw fas fa-book"></i><span> 漫画</span></a></div><div class="menus_item"><a class="site-page" href="/novel/"><i class="fa-fw fas fa-book-open"></i><span> 小说</span></a></div><div class="menus_item"><a class="site-page" href="/asmr/"><i class="fa-fw fas fa-headphones"></i><span> ASMR</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/atom.xml"><i class="fa-fw fas fa-rss"></i><span> 订阅</span></a></div></div></div></div><div class="page type-manga" id="body-wrap"><header class="not-home-page" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">LSS的个人博客</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></div><div class="menus_item"><a class="site-page" href="/movies/"><i class="fa-fw fas fa-film"></i><span> 电影</span></a></div><div class="menus_item"><a class="site-page" href="/anime/"><i class="fa-fw fas fa-play-circle"></i><span> 动漫</span></a></div><div class="menus_item"><a class="site-page" href="/manga/"><i class="fa-fw fas fa-book"></i><span> 漫画</span></a></div><div class="menus_item"><a class="site-page" href="/novel/"><i class="fa-fw fas fa-book-open"></i><span> 小说</span></a></div><div class="menus_item"><a class="site-page" href="/asmr/"><i class="fa-fw fas fa-headphones"></i><span> ASMR</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/atom.xml"><i class="fa-fw fas fa-rss"></i><span> 订阅</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title">漫画世界</h1></div></header><main class="layout" id="content-inner"><div id="page"><div class="container" id="article-container"><h1 id="📚-漫画世界"><a href="#📚-漫画世界" class="headerlink" title="📚 漫画世界"></a>📚 漫画世界</h1><p>这里分享一些优质的漫画作品和在线阅读资源，希望帮你找到喜欢的漫画！</p>
+<h2 id="🆓-免费漫画网站推荐"><a href="#🆓-免费漫画网站推荐" class="headerlink" title="🆓 免费漫画网站推荐"></a>🆓 免费漫画网站推荐</h2><h3 id="🎌-中文免费漫画网站"><a href="#🎌-中文免费漫画网站" class="headerlink" title="🎌 中文免费漫画网站"></a>🎌 中文免费漫画网站</h3><h4 id="1-动漫之家"><a href="#1-动漫之家" class="headerlink" title="1. 动漫之家"></a>1. <strong>动漫之家</strong></h4><blockquote>
+<p>网址：<a target="_blank" rel="noopener" href="http://www.dmzj.com/">www.dmzj.com</a></p>
+</blockquote>
+<ul>
+<li>国内最大漫画平台</li>
+<li>资源极其丰富</li>
+<li>更新速度快</li>
+<li>支持离线下载</li>
+</ul>
+<h4 id="2-哔哩哔哩漫画"><a href="#2-哔哩哔哩漫画" class="headerlink" title="2. 哔哩哔哩漫画"></a>2. <strong>哔哩哔哩漫画</strong></h4><blockquote>
+<p>网址：manga.bilibili.com</p>
+</blockquote>
+<ul>
+<li>正版授权多</li>
+<li>界面体验好</li>
+<li>部分免费</li>
+<li>社区氛围好</li>
+</ul>
+<h4 id="3-快看漫画"><a href="#3-快看漫画" class="headerlink" title="3. 快看漫画"></a>3. <strong>快看漫画</strong></h4><blockquote>
+<p>网址：<a target="_blank" rel="noopener" href="http://www.kuaikanmanhua.com/">www.kuaikanmanhua.com</a></p>
+</blockquote>
+<ul>
+<li>国漫平台</li>
+<li>原创作品多</li>
+<li>青春向作品</li>
+<li>界面友好</li>
+</ul>
+<h4 id="4-腾讯动漫"><a href="#4-腾讯动漫" class="headerlink" title="4. 腾讯动漫"></a>4. <strong>腾讯动漫</strong></h4><blockquote>
+<p>网址：ac.qq.com</p>
+</blockquote>
+<ul>
+<li>腾讯旗下</li>
+<li>正版资源多</li>
+<li>部分免费</li>
+<li>质量有保障</li>
+</ul>
+<h4 id="5-有妖气漫画"><a href="#5-有妖气漫画" class="headerlink" title="5. 有妖气漫画"></a>5. <strong>有妖气漫画</strong></h4><blockquote>
+<p>网址：<a target="_blank" rel="noopener" href="http://www.u17.com/">www.u17.com</a></p>
+</blockquote>
+<ul>
+<li>老牌平台</li>
+<li>原创作品多</li>
+<li>风格多样</li>
+<li>社区活跃</li>
+</ul>
+<h4 id="6-漫画柜"><a href="#6-漫画柜" class="headerlink" title="6. 漫画柜"></a>6. <strong>漫画柜</strong></h4><blockquote>
+<p>网址：<a target="_blank" rel="noopener" href="http://www.mhgui.com/">www.mhgui.com</a></p>
+</blockquote>
+<ul>
+<li>老牌免费网站</li>
+<li>资源全面</li>
+<li>分类清晰</li>
+<li>阅读体验好</li>
+</ul>
+<h3 id="🌐-国际漫画网站"><a href="#🌐-国际漫画网站" class="headerlink" title="🌐 国际漫画网站"></a>🌐 国际漫画网站</h3><h4 id="1-MangaDex"><a href="#1-MangaDex" class="headerlink" title="1. MangaDex"></a>1. <strong>MangaDex</strong></h4><blockquote>
+<p>网址：mangadex.org</p>
+</blockquote>
+<ul>
+<li>多语言支持</li>
+<li>扫描版质量高</li>
+<li>更新及时</li>
+<li>社区功能强</li>
+</ul>
+<h4 id="2-Mangakakalot"><a href="#2-Mangakakalot" class="headerlink" title="2. Mangakakalot"></a>2. <strong>Mangakakalot</strong></h4><blockquote>
+<p>网址：mangakakalot.com</p>
+</blockquote>
+<ul>
+<li>免费日漫</li>
+<li>更新快速</li>
+<li>分类详细</li>
+<li>移动端友好</li>
+</ul>
+<h4 id="3-Webtoon"><a href="#3-Webtoon" class="headerlink" title="3. Webtoon"></a>3. <strong>Webtoon</strong></h4><blockquote>
+<p>网址：<a target="_blank" rel="noopener" href="http://www.webtoons.com/">www.webtoons.com</a></p>
+</blockquote>
+<ul>
+<li>彩条漫画</li>
+<li>原创作品</li>
+<li>多语言</li>
+<li>创作者友好</li>
+</ul>
+<h2 id="🏆-经典必看漫画"><a href="#🏆-经典必看漫画" class="headerlink" title="🏆 经典必看漫画"></a>🏆 经典必看漫画</h2><h3 id="🌟-日本漫画经典"><a href="#🌟-日本漫画经典" class="headerlink" title="🌟 日本漫画经典"></a>🌟 日本漫画经典</h3><h4 id="1-《海贼王》"><a href="#1-《海贼王》" class="headerlink" title="1. 《海贼王》"></a>1. <strong>《海贼王》</strong></h4><ul>
+<li><strong>作者</strong>: 尾田荣一郎</li>
+<li><strong>连载</strong>: 1997年至今</li>
+<li><strong>卷数</strong>: 100+卷</li>
+<li><strong>类型</strong>: 冒险、热血</li>
+<li><strong>推荐理由</strong>: 梦想与友情的史诗</li>
+</ul>
+<h4 id="2-《火影忍者》"><a href="#2-《火影忍者》" class="headerlink" title="2. 《火影忍者》"></a>2. <strong>《火影忍者》</strong></h4><ul>
+<li><strong>作者</strong>: 岸本齐史</li>
+<li><strong>连载</strong>: 1999-2014</li>
+<li><strong>卷数</strong>: 72卷</li>
+<li><strong>类型</strong>: 忍者、成长</li>
+<li><strong>推荐理由</strong>: 励志成长故事</li>
+</ul>
+<h4 id="3-《死神》"><a href="#3-《死神》" class="headerlink" title="3. 《死神》"></a>3. <strong>《死神》</strong></h4><ul>
+<li><strong>作者</strong>: 久保带人</li>
+<li><strong>连载</strong>: 2001-2016</li>
+<li><strong>卷数</strong>: 74卷</li>
+<li><strong>类型</strong>: 死神、战斗</li>
+<li><strong>推荐理由</strong>: 画风独特战斗精彩</li>
+</ul>
+<h4 id="4-《龙珠》"><a href="#4-《龙珠》" class="headerlink" title="4. 《龙珠》"></a>4. <strong>《龙珠》</strong></h4><ul>
+<li><strong>作者</strong>: 鸟山明</li>
+<li><strong>连载</strong>: 1984-1995</li>
+<li><strong>卷数</strong>: 42卷</li>
+<li><strong>类型</strong>: 战斗、冒险</li>
+<li><strong>推荐理由</strong>: 热血漫画鼻祖</li>
+</ul>
+<h3 id="🎨-治愈系漫画"><a href="#🎨-治愈系漫画" class="headerlink" title="🎨 治愈系漫画"></a>🎨 治愈系漫画</h3><h4 id="1-《夏目友人帐》"><a href="#1-《夏目友人帐》" class="headerlink" title="1. 《夏目友人帐》"></a>1. <strong>《夏目友人帐》</strong></h4><ul>
+<li><strong>作者</strong>: 绿川幸</li>
+<li><strong>连载</strong>: 2003年至今</li>
+<li><strong>卷数</strong>: 连载中</li>
+<li><strong>类型</strong>: 治愈、妖怪</li>
+<li><strong>特色</strong>: 温柔的妖怪故事</li>
+</ul>
+<h4 id="2-《紫罗兰永恒花园》"><a href="#2-《紫罗兰永恒花园》" class="headerlink" title="2. 《紫罗兰永恒花园》"></a>2. <strong>《紫罗兰永恒花园》</strong></h4><ul>
+<li><strong>作者</strong>: 晓佳奈</li>
+<li><strong>连载</strong>: 2015-2020</li>
+<li><strong>卷数</strong>: 4卷</li>
+<li><strong>类型</strong>: 治愈、战争</li>
+<li><strong>特色</strong>: 情感触动人心</li>
+</ul>
+<h4 id="3-《四月是你的谎言》"><a href="#3-《四月是你的谎言》" class="headerlink" title="3. 《四月是你的谎言》"></a>3. <strong>《四月是你的谎言》</strong></h4><ul>
+<li><strong>作者</strong>: 新川直司</li>
+<li><strong>连载</strong>: 2011-2015</li>
+<li><strong>卷数</strong>: 11卷</li>
+<li><strong>类型</strong>: 爱情、音乐</li>
+<li><strong>特色</strong>: 青春与音乐的结合</li>
+</ul>
+<h3 id="🎭-悬疑智斗"><a href="#🎭-悬疑智斗" class="headerlink" title="🎭 悬疑智斗"></a>🎭 悬疑智斗</h3><h4 id="1-《死亡笔记》"><a href="#1-《死亡笔记》" class="headerlink" title="1. 《死亡笔记》"></a>1. <strong>《死亡笔记》</strong></h4><ul>
+<li><strong>作者</strong>: 大场鸫&#x2F;小畑健</li>
+<li><strong>连载</strong>: 2003-2006</li>
+<li><strong>卷数</strong>: 12卷</li>
+<li><strong>类型</strong>: 悬疑、智斗</li>
+<li><strong>特色</strong>: 精彩的智力对决</li>
+</ul>
+<h4 id="2-《进击的巨人》"><a href="#2-《进击的巨人》" class="headerlink" title="2. 《进击的巨人》"></a>2. <strong>《进击的巨人》</strong></h4><ul>
+<li><strong>作者</strong>: 谏山创</li>
+<li><strong>连载</strong>: 2009-2021</li>
+<li><strong>卷数</strong>: 34卷</li>
+<li><strong>类型</strong>: 末日、战争</li>
+<li><strong>特色</strong>: 深刻的人性探讨</li>
+</ul>
+<h4 id="3-《寄生兽》"><a href="#3-《寄生兽》" class="headerlink" title="3. 《寄生兽》"></a>3. <strong>《寄生兽》</strong></h4><ul>
+<li><strong>作者</strong>: 岩明均</li>
+<li><strong>连载</strong>: 1990-1995</li>
+<li><strong>卷数</strong>: 10卷</li>
+<li><strong>类型</strong>: 科幻、恐怖</li>
+<li><strong>特色</strong>: 人与生物的共存</li>
+</ul>
+<h2 id="🎌-中国漫画推荐"><a href="#🎌-中国漫画推荐" class="headerlink" title="🎌 中国漫画推荐"></a>🎌 中国漫画推荐</h2><h3 id="🏮-国漫经典"><a href="#🏮-国漫经典" class="headerlink" title="🏮 国漫经典"></a>🏮 国漫经典</h3><h4 id="1-《一人之下》"><a href="#1-《一人之下》" class="headerlink" title="1. 《一人之下》"></a>1. <strong>《一人之下》</strong></h4><ul>
+<li><strong>作者</strong>: 米二</li>
+<li><strong>连载</strong>: 2015年至今</li>
+<li><strong>平台</strong>: 腾讯动漫</li>
+<li><strong>类型</strong>: 异能、武侠</li>
+<li><strong>推荐理由</strong>: 国漫崛起代表作</li>
+</ul>
+<h4 id="2-《镇魂街》"><a href="#2-《镇魂街》" class="headerlink" title="2. 《镇魂街》"></a>2. <strong>《镇魂街》</strong></h4><ul>
+<li><strong>作者</strong>: 许辰</li>
+<li><strong>连载</strong>: 2010年至今</li>
+<li><strong>平台</strong>: 有妖气</li>
+<li><strong>类型</strong>: 热血、灵异</li>
+<li><strong>推荐理由</strong>: 国产热血漫画佳作</li>
+</ul>
+<h4 id="3-《狐妖小红娘》"><a href="#3-《狐妖小红娘》" class="headerlink" title="3. 《狐妖小红娘》"></a>3. <strong>《狐妖小红娘》</strong></h4><ul>
+<li><strong>作者</strong>: 小新</li>
+<li><strong>连载</strong>: 2012年至今</li>
+<li><strong>平台</strong>: 腾讯动漫</li>
+<li><strong>类型</strong>: 爱情、奇幻</li>
+<li><strong>推荐理由</strong>: 国产爱情漫画经典</li>
+</ul>
+<h4 id="4-《妖神记》"><a href="#4-《妖神记》" class="headerlink" title="4. 《妖神记》"></a>4. <strong>《妖神记》</strong></h4><ul>
+<li><strong>作者</strong>: 发飙的蜗牛</li>
+<li><strong>连载</strong>: 2014年至今</li>
+<li><strong>平台</strong>: 动漫之家</li>
+<li><strong>类型</strong>: 穿越、奇幻</li>
+<li><strong>推荐理由</strong>: 穿越题材佳作</li>
+</ul>
+<h3 id="🎨-青春校园"><a href="#🎨-青春校园" class="headerlink" title="🎨 青春校园"></a>🎨 青春校园</h3><h4 id="1-《快把我哥带走》"><a href="#1-《快把我哥带走》" class="headerlink" title="1. 《快把我哥带走》"></a>1. <strong>《快把我哥带走》</strong></h4><ul>
+<li><strong>作者</strong>: 幽·灵</li>
+<li><strong>连载</strong>: 2015年至今</li>
+<li><strong>平台</strong>: 快看漫画</li>
+<li><strong>类型</strong>: 搞笑、校园</li>
+<li><strong>特色</strong>: 兄妹日常搞笑</li>
+</ul>
+<h4 id="2-《SQ从你的名字开始》"><a href="#2-《SQ从你的名字开始》" class="headerlink" title="2. 《SQ从你的名字开始》"></a>2. <strong>《SQ从你的名字开始》</strong></h4><ul>
+<li><strong>作者</strong>: 国王轻笑</li>
+<li><strong>连载</strong>: 2016年至今</li>
+<li><strong>平台</strong>: 快看漫画</li>
+<li><strong>类型</strong>: 爱情、校园</li>
+<li><strong>特色</strong>: 清新校园爱情</li>
+</ul>
+<h4 id="3-《头条都是他》"><a href="#3-《头条都是他》" class="headerlink" title="3. 《头条都是他》"></a>3. <strong>《头条都是他》</strong></h4><ul>
+<li><strong>作者</strong>: 时代少年</li>
+<li><strong>连载</strong>: 2013年至今</li>
+<li><strong>平台</strong>: 快看漫画</li>
+<li><strong>类型</strong>: 偶像、搞笑</li>
+<li><strong>特色</strong>: 偶像团体日常</li>
+</ul>
+<h2 id="🌈-Web漫画推荐"><a href="#🌈-Web漫画推荐" class="headerlink" title="🌈 Web漫画推荐"></a>🌈 Web漫画推荐</h2><h3 id="🌟-彩条漫画"><a href="#🌟-彩条漫画" class="headerlink" title="🌟 彩条漫画"></a>🌟 彩条漫画</h3><h4 id="1-《女神降临》"><a href="#1-《女神降临》" class="headerlink" title="1. 《女神降临》"></a>1. <strong>《女神降临》</strong></h4><ul>
+<li><strong>作者</strong>: yaongyi</li>
+<li><strong>连载</strong>: 2018年至今</li>
+<li><strong>平台</strong>: Webtoon</li>
+<li><strong>类型</strong>: 爱情、校园</li>
+<li><strong>特色</strong>: 颜值与爱情并存</li>
+</ul>
+<h4 id="2-《看脸时代》"><a href="#2-《看脸时代》" class="headerlink" title="2. 《看脸时代》"></a>2. <strong>《看脸时代》</strong></h4><ul>
+<li><strong>作者</strong>: 朴泰俊</li>
+<li><strong>连载</strong>: 2014年至今</li>
+<li><strong>平台</strong>: Webtoon</li>
+<li><strong>类型</strong>: 校园、超能力</li>
+<li><strong>特色</strong>: 颜值时代的思考</li>
+</ul>
+<h4 id="3-《我的ID是江南美人》"><a href="#3-《我的ID是江南美人》" class="headerlink" title="3. 《我的ID是江南美人》"></a>3. <strong>《我的ID是江南美人》</strong></h4><ul>
+<li><strong>作者</strong>: 奇麻依</li>
+<li><strong>连载</strong>: 2016-2018</li>
+<li><strong>平台</strong>: Naver</li>
+<li><strong>类型</strong>: 爱情、校园</li>
+<li><strong>特色</strong>: 外貌与内在的探讨</li>
+</ul>
+<h3 id="🎭-韩国Web漫画"><a href="#🎭-韩国Web漫画" class="headerlink" title="🎭 韩国Web漫画"></a>🎭 韩国Web漫画</h3><h4 id="1-《天官赐福》"><a href="#1-《天官赐福》" class="headerlink" title="1. 《天官赐福》"></a>1. <strong>《天官赐福》</strong></h4><ul>
+<li><strong>作者</strong>: 墨香铜臭</li>
+<li><strong>连载</strong>: 2017-2020</li>
+<li><strong>类型</strong>: 古风、仙侠</li>
+<li><strong>特色</strong>: 古风仙侠佳作</li>
+</ul>
+<h4 id="2-《魔道祖师》"><a href="#2-《魔道祖师》" class="headerlink" title="2. 《魔道祖师》"></a>2. <strong>《魔道祖师》</strong></h4><ul>
+<li><strong>作者</strong>: 墨香铜臭</li>
+<li><strong>连载</strong>: 2015-2016</li>
+<li><strong>类型</strong>: 古风、仙侠</li>
+<li><strong>特色</strong>: 古风耽美经典</li>
+</ul>
+<h2 id="📚-漫画阅读小贴士"><a href="#📚-漫画阅读小贴士" class="headerlink" title="📚 漫画阅读小贴士"></a>📚 漫画阅读小贴士</h2><h3 id="🎨-如何选择漫画"><a href="#🎨-如何选择漫画" class="headerlink" title="🎨 如何选择漫画"></a>🎨 如何选择漫画</h3><ol>
+<li><strong>画风偏好</strong> - 选择喜欢的绘画风格</li>
+<li><strong>故事类型</strong> - 爱情、战斗、悬疑等</li>
+<li><strong>连载状态</strong> - 已完结避免等待</li>
+<li><strong>作者口碑</strong> - 知名作者作品质量有保障</li>
+</ol>
+<h3 id="📖-阅读建议"><a href="#📖-阅读建议" class="headerlink" title="📖 阅读建议"></a>📖 阅读建议</h3><ol>
+<li><strong>从经典开始</strong> - 入坑必看经典作品</li>
+<li><strong>关注更新</strong> - 及时追更避免剧透</li>
+<li><strong>支持正版</strong> - 购买实体书支持作者</li>
+<li><strong>加入社区</strong> - 和其他读者交流讨论</li>
+</ol>
+<h3 id="🎭-漫画改编作品"><a href="#🎭-漫画改编作品" class="headerlink" title="🎭 漫画改编作品"></a>🎭 漫画改编作品</h3><h4 id="动画化热门作品"><a href="#动画化热门作品" class="headerlink" title="动画化热门作品"></a>动画化热门作品</h4><ol>
+<li><strong>《鬼灭之刃》</strong> - 漫画→动画大成功</li>
+<li><strong>《咒术回战》</strong> - 新一代热门</li>
+<li><strong>《间谍过家家》</strong> - 家庭喜剧爆款</li>
+</ol>
+<h4 id="真人化作品"><a href="#真人化作品" class="headerlink" title="真人化作品"></a>真人化作品</h4><ol>
+<li><strong>《死亡笔记》</strong> - 电影电视剧化</li>
+<li><strong>《银魂》</strong> - 真人版电影</li>
+<li><strong>《王者天下》</strong> - 真人电影系列</li>
+</ol>
+<h2 id="💬-漫画交流"><a href="#💬-漫画交流" class="headerlink" title="💬 漫画交流"></a>💬 漫画交流</h2><p>欢迎在评论区分享你的漫画喜好！</p>
+<ul>
+<li>最喜欢的漫画角色是谁？</li>
+<li>有什么漫画推荐给我吗？</li>
+<li>让我们一起讨论漫画的魅力！</li>
+</ul>
+<blockquote>
+<p>📚 <strong>漫画是静态的动画，用画面讲述动人的故事！</strong></p>
+</blockquote>
+<hr>
+<p><strong>🎌 漫画库持续更新中，欢迎常来发现新作品！</strong></p>
+</div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src= "/img/loading.gif" data-lazy-src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">LSS</div><div class="author-info-description">一个专注于技术分享和生活记录的个人博客</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/MIXUULSS"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/MIXUULSS" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:mixuu10001@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到我的博客！这里记录生活，分享技术，感谢您的访问～</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2025/03/01/%E5%8D%9A%E5%AE%A2%E5%8A%9F%E8%83%BD%E5%B1%95%E7%A4%BA%E4%B8%8E%E6%95%99%E7%A8%8B/" title="博客功能展示与使用教程"><img src= "/img/loading.gif" data-lazy-src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="博客功能展示与使用教程"/></a><div class="content"><a class="title" href="/2025/03/01/%E5%8D%9A%E5%AE%A2%E5%8A%9F%E8%83%BD%E5%B1%95%E7%A4%BA%E4%B8%8E%E6%95%99%E7%A8%8B/" title="博客功能展示与使用教程">博客功能展示与使用教程</a><time datetime="2025-03-01T06:00:00.000Z" title="发表于 2025-03-01 14:00:00">2025-03-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/03/01/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="欢迎来到我的博客"><img src= "/img/loading.gif" data-lazy-src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="欢迎来到我的博客"/></a><div class="content"><a class="title" href="/2025/03/01/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="欢迎来到我的博客">欢迎来到我的博客</a><time datetime="2025-03-01T05:00:00.000Z" title="发表于 2025-03-01 13:00:00">2025-03-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/03/15/2025-3-3%E7%AC%AC%E4%B8%80%E7%AF%87Blog/" title="CSS动画完全指南：从原理到实战"><img src= "/img/loading.gif" data-lazy-src="/images/css-animation-cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CSS动画完全指南：从原理到实战"/></a><div class="content"><a class="title" href="/2024/03/15/2025-3-3%E7%AC%AC%E4%B8%80%E7%AF%87Blog/" title="CSS动画完全指南：从原理到实战">CSS动画完全指南：从原理到实战</a><time datetime="2024-03-14T16:00:00.000Z" title="发表于 2024-03-15 00:00:00">2024-03-15</time></div></div></div></div><div class="card-widget" id="card-newest-comments"><div class="item-headline"><i class="fas fa-comment-dots"></i><span>最新评论</span></div><div class="aside-list"><span>加载中...</span></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%95%99%E7%A8%8B/"><span class="card-category-list-name">教程</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%94%9F%E6%B4%BB/"><span class="card-category-list-name">生活</span><span class="card-category-list-count">1</span></a></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 1.1em; color: #999">前端</a> <a href="/tags/%E5%BC%80%E5%A7%8B/" style="font-size: 1.1em; color: #999">开始</a> <a href="/tags/CSS/" style="font-size: 1.1em; color: #999">CSS</a> <a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 1.1em; color: #999">生活</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 1.5em; color: #99a9bf">教程</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 1.5em; color: #99a9bf">博客</a> <a href="/tags/%E5%8A%9F%E8%83%BD/" style="font-size: 1.1em; color: #999">功能</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/03/">
+            <span class="card-archive-list-date">
+              三月 2025
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2024/03/">
+            <span class="card-archive-list-date">
+              三月 2024
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">3</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">2.1k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-03-01T15:00:55.719Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2025 - 2026 By LSS</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.3.4</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@5.3.4/source/js/utils.min.js"></script><script src="https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@5.3.4/source/js/main.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.36/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.iife.min.js"></script><div class="js-pjax"><script>(() => {
+  const runMermaid = ele => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+    ele.forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = `%%{init:{ 'theme':'${theme}'}}%%\n`
+      const mermaidID = `mermaid-${index}`
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+      const renderMermaid = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      // mermaid v9 and v10 compatibility
+      typeof renderFn === 'string' ? renderMermaid(renderFn) : renderFn.then(({ svg }) => renderMermaid(svg))
+    })
+  }
+
+  const codeToMermaid = () => {
+    const codeMermaidEle = document.querySelectorAll('pre > code.mermaid')
+    if (codeMermaidEle.length === 0) return
+
+    codeMermaidEle.forEach(ele => {
+      const preEle = document.createElement('pre')
+      preEle.className = 'mermaid-src'
+      preEle.hidden = true
+      preEle.textContent = ele.textContent
+      const newEle = document.createElement('div')
+      newEle.className = 'mermaid-wrap'
+      newEle.appendChild(preEle)
+      ele.parentNode.replaceWith(newEle)
+    })
+  }
+
+  const loadMermaid = () => {
+    if (true) codeToMermaid()
+    const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+    if ($mermaid.length === 0) return
+
+    const runMermaidFn = () => runMermaid($mermaid)
+    btf.addGlobalFn('themeChange', runMermaidFn, 'mermaid')
+    window.loadMermaid ? runMermaidFn() : btf.getScript('https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.min.js').then(runMermaidFn)
+  }
+
+  btf.addGlobalFn('encrypt', loadMermaid, 'mermaid')
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = null
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo.cuci.cc',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(res => {
+      countELement.textContent = res[0].count
+    }).catch(err => {
+      console.error(err)
+    })
+  }
+
+  const init = (el = document, path = location.pathname) => {
+    twikoo.init({
+      el: el.querySelector('#twikoo-wrap'),
+      envId: 'https://twikoo.cuci.cc',
+      region: '',
+      onCommentLoaded: () => {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      },
+      ...option,
+      path: isShuoshuo ? path : (option && option.path) || path
+    })
+
+    GLOBAL_CONFIG_SITE.pageType === 'post' && getCount()
+
+    isShuoshuo && (window.shuoshuoComment.destroyTwikoo = () => {
+      if (el.children.length) {
+        el.innerHTML = ''
+        el.classList.add('no-comment')
+      }
+    })
+  }
+
+  const loadTwikoo = (el, path) => {
+    if (typeof twikoo === 'object') setTimeout(() => init(el, path), 0)
+    else btf.getScript('https://cdn.jsdelivr.net/npm/twikoo@1.6.41/dist/twikoo.all.min.js').then(() => init(el, path))
+  }
+
+  if (isShuoshuo) {
+    'Twikoo' === 'Twikoo'
+      ? window.shuoshuoComment = { loadComment: loadTwikoo }
+      : window.loadOtherComment = loadTwikoo
+    return
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = loadTwikoo
+  }
+})()</script></div><script>window.newestComments = {
+  changeContent: content => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
+    content = content.replace(/<code>.*?<\/code>/gi, '[代码]') // replace code
+    content = content.replace(/<[^>]+>/g, "") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0, 150) + '...'
+    }
+    return content
+  },
+
+  generateHtml: (array, ele) => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class="aside-list-item">'
+
+        if (true && array[i].avatar) {
+          const imgAttr = 'data-lazy-src'
+          const lazyloadNative = ''
+          result += `<a href="${array[i].url}" class="thumbnail"><img ${imgAttr}="${array[i].avatar}" alt="${array[i].nick}" ${lazyloadNative}></a>`
+        }
+
+        result += `<div class="content">
+        <a class="comment" href="${array[i].url}" title="${array[i].content}">${array[i].content}</a>
+        <div class="name"><span>${array[i].nick} / </span><time datetime="${array[i].date}">${btf.diffDate(array[i].date, true)}</time></div>
+        </div></div>`
+      }
+    } else {
+      result += '暂无评论'
+    }
+
+    ele.innerHTML = result
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh(ele)
+  },
+
+  newestCommentInit: (name, getComment) => {
+    const $dom = document.querySelector('#card-newest-comments .aside-list')
+    if ($dom) {
+      const data = btf.saveToLocal.get(name)
+      if (data) {
+        newestComments.generateHtml(JSON.parse(data), $dom)
+      } else {
+        getComment($dom)
+      }
+    }
+  },
+
+  run: (name, getComment) => {
+    newestComments.newestCommentInit(name, getComment)
+    btf.addGlobalFn('pjaxComplete', () => newestComments.newestCommentInit(name, getComment), name)
+  }
+}</script><script>window.addEventListener('load', () => {
+  const keyName = 'twikoo-newest-comments'
+  const { changeContent, generateHtml, run } = window.newestComments
+
+  const getComment = ele => {
+    const runTwikoo = () => {
+      twikoo.getRecentComments({
+        envId: 'https://twikoo.cuci.cc',
+        region: '',
+        pageSize: 6,
+        includeReply: true
+      }).then(res => {
+        const twikooArray = res.map(e => {
+          return {
+            'content': changeContent(e.comment),
+            'avatar': e.avatar,
+            'nick': e.nick,
+            'url': e.url + '#' + e.id,
+            'date': new Date(e.created).toISOString()
+          }
+        })
+
+        btf.saveToLocal.set(keyName, JSON.stringify(twikooArray), 10/(60*24))
+        generateHtml(twikooArray, ele)
+      }).catch(err => {
+        console.error(err)
+        ele.textContent= "无法获取评论，请确认相关配置是否正确"
+      })
+    }
+
+    if (typeof twikoo === 'object') {
+      runTwikoo()
+    } else {
+      btf.getScript('https://cdn.jsdelivr.net/npm/twikoo@1.6.41/dist/twikoo.all.min.js').then(runTwikoo)
+    }
+  }
+
+  run(keyName, getComment)
+})</script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.4/dist/canvas-fluttering-ribbon.min.js"></script><script id="canvas_nest" defer="defer" color="135,206,250" opacity="0.5" zIndex="-1" count="99" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.4/dist/canvas-nest.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.4/dist/click-heart.min.js" async="async" mobile="false"></script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script>(() => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => fn())
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      const usePjax = true
+      true 
+        ? (usePjax ? pjax.loadUrl('/404.html') : window.location.href = '/404.html')
+        : window.location.href = e.request.responseURL
+    }
+  })
+})()</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章..." type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@5.3.4/source/js/search/local-search.min.js"></script></div></div></body></html>

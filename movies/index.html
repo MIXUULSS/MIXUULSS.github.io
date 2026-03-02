@@ -1,0 +1,634 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>电影收藏 | LSS的个人博客</title><meta name="author" content="LSS"><meta name="copyright" content="LSS"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="🎬 电影收藏这里分享一些经典电影和我的观影感悟，希望能帮你找到喜欢的电影！ 🏆 个人推荐 Top 101. 《肖申克的救赎》- 1994⭐ 评分: 9.7&#x2F;10🎭 类型: 剧情&#x2F;犯罪📝 短评: 希望是最好的东西，永远不会消逝。🎬 经典台词: “希望是好东西，也许是世上最好的东西。” 2. 《教父》- 1972⭐ 评分: 9.2&#x2F;10🎭 类型: 剧情&amp;#x2">
+<meta property="og:type" content="website">
+<meta property="og:title" content="电影收藏">
+<meta property="og:url" content="https://lssblog.us.kg/movies/index.html">
+<meta property="og:site_name" content="LSS的个人博客">
+<meta property="og:description" content="🎬 电影收藏这里分享一些经典电影和我的观影感悟，希望能帮你找到喜欢的电影！ 🏆 个人推荐 Top 101. 《肖申克的救赎》- 1994⭐ 评分: 9.7&#x2F;10🎭 类型: 剧情&#x2F;犯罪📝 短评: 希望是最好的东西，永远不会消逝。🎬 经典台词: “希望是好东西，也许是世上最好的东西。” 2. 《教父》- 1972⭐ 评分: 9.2&#x2F;10🎭 类型: 剧情&amp;#x2">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://lssblog.us.kg/img/butterfly-icon.png">
+<meta property="article:published_time" content="2025-03-01T04:00:00.000Z">
+<meta property="article:modified_time" content="2026-03-01T14:42:09.417Z">
+<meta property="article:author" content="LSS">
+<meta property="article:tag" content="技术,博客,生活,编程,Hexo">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://lssblog.us.kg/img/butterfly-icon.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://lssblog.us.kg/movies/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.3.4"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.36/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":true,"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":true},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '电影收藏',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'page'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src= "/img/loading.gif" data-lazy-src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></div><div class="menus_item"><a class="site-page" href="/movies/"><i class="fa-fw fas fa-film"></i><span> 电影</span></a></div><div class="menus_item"><a class="site-page" href="/anime/"><i class="fa-fw fas fa-play-circle"></i><span> 动漫</span></a></div><div class="menus_item"><a class="site-page" href="/manga/"><i class="fa-fw fas fa-book"></i><span> 漫画</span></a></div><div class="menus_item"><a class="site-page" href="/novel/"><i class="fa-fw fas fa-book-open"></i><span> 小说</span></a></div><div class="menus_item"><a class="site-page" href="/asmr/"><i class="fa-fw fas fa-headphones"></i><span> ASMR</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/atom.xml"><i class="fa-fw fas fa-rss"></i><span> 订阅</span></a></div></div></div></div><div class="page type-movies" id="body-wrap"><header class="not-home-page" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">LSS的个人博客</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></div><div class="menus_item"><a class="site-page" href="/movies/"><i class="fa-fw fas fa-film"></i><span> 电影</span></a></div><div class="menus_item"><a class="site-page" href="/anime/"><i class="fa-fw fas fa-play-circle"></i><span> 动漫</span></a></div><div class="menus_item"><a class="site-page" href="/manga/"><i class="fa-fw fas fa-book"></i><span> 漫画</span></a></div><div class="menus_item"><a class="site-page" href="/novel/"><i class="fa-fw fas fa-book-open"></i><span> 小说</span></a></div><div class="menus_item"><a class="site-page" href="/asmr/"><i class="fa-fw fas fa-headphones"></i><span> ASMR</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/atom.xml"><i class="fa-fw fas fa-rss"></i><span> 订阅</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title">电影收藏</h1></div></header><main class="layout" id="content-inner"><div id="page"><div class="container" id="article-container"><h1 id="🎬-电影收藏"><a href="#🎬-电影收藏" class="headerlink" title="🎬 电影收藏"></a>🎬 电影收藏</h1><p>这里分享一些经典电影和我的观影感悟，希望能帮你找到喜欢的电影！</p>
+<h2 id="🏆-个人推荐-Top-10"><a href="#🏆-个人推荐-Top-10" class="headerlink" title="🏆 个人推荐 Top 10"></a>🏆 个人推荐 Top 10</h2><h3 id="1-《肖申克的救赎》-1994"><a href="#1-《肖申克的救赎》-1994" class="headerlink" title="1. 《肖申克的救赎》- 1994"></a>1. 《肖申克的救赎》- 1994</h3><p><strong>⭐ 评分</strong>: 9.7&#x2F;10<br><strong>🎭 类型</strong>: 剧情&#x2F;犯罪<br><strong>📝 短评</strong>: 希望是最好的东西，永远不会消逝。<br><strong>🎬 经典台词</strong>: “希望是好东西，也许是世上最好的东西。”</p>
+<h3 id="2-《教父》-1972"><a href="#2-《教父》-1972" class="headerlink" title="2. 《教父》- 1972"></a>2. 《教父》- 1972</h3><p><strong>⭐ 评分</strong>: 9.2&#x2F;10<br><strong>🎭 类型</strong>: 剧情&#x2F;犯罪<br><strong>📝 短评</strong>: 黑帮电影的巅峰之作，马龙·白兰度的表演令人难忘。<br><strong>🎬 经典台词</strong>: “我会给他一个他无法拒绝的条件。”</p>
+<h3 id="3-《盗梦空间》-2010"><a href="#3-《盗梦空间》-2010" class="headerlink" title="3. 《盗梦空间》- 2010"></a>3. 《盗梦空间》- 2010</h3><p><strong>⭐ 评分</strong>: 8.8&#x2F;10<br><strong>🎭 类型</strong>: 科幻&#x2F;悬疑<br><strong>📝 短评</strong>: 诺兰的想象力之作，多层梦境设计令人叹为观止。<br><strong>🎬 经典台词</strong>: “Your mind is the scene of the crime.”</p>
+<h3 id="4-《星际穿越》-2014"><a href="#4-《星际穿越》-2014" class="headerlink" title="4. 《星际穿越》- 2014"></a>4. 《星际穿越》- 2014</h3><p><strong>⭐ 评分</strong>: 8.6&#x2F;10<br><strong>🎭 类型</strong>: 科幻&#x2F;冒险<br><strong>📝 短评</strong>: 诺兰再次展现对时间和空间的深刻理解。<br><strong>🎬 经典台词</strong>: “爱是唯一可以穿越时间与空间的事物。”</p>
+<h3 id="5-《阿甘正传》-1994"><a href="#5-《阿甘正传》-1994" class="headerlink" title="5. 《阿甘正传》- 1994"></a>5. 《阿甘正传》- 1994</h3><p><strong>⭐ 评分</strong>: 8.8&#x2F;10<br><strong>🎭 类型</strong>: 剧情&#x2F;爱情<br><strong>📝 短评</strong>: 简单的人创造不简单的人生，温暖人心。<br><strong>🎬 经典台词</strong>: “生活就像一盒巧克力，你永远不知道下一颗是什么味道。”</p>
+<h2 id="🎭-电影分类推荐"><a href="#🎭-电影分类推荐" class="headerlink" title="🎭 电影分类推荐"></a>🎭 电影分类推荐</h2><h3 id="🔥-动作片系列"><a href="#🔥-动作片系列" class="headerlink" title="🔥 动作片系列"></a>🔥 动作片系列</h3><h4 id="《碟中谍》系列"><a href="#《碟中谍》系列" class="headerlink" title="《碟中谍》系列"></a>《碟中谍》系列</h4><ul>
+<li><strong>主演</strong>: 汤姆·克鲁斯</li>
+<li><strong>特色</strong>: 高科技装备，惊险刺激</li>
+<li><strong>推荐</strong>: 《碟中谍6：全面瓦解》- 系列最佳</li>
+</ul>
+<h4 id="《速度与激情》系列"><a href="#《速度与激情》系列" class="headerlink" title="《速度与激情》系列"></a>《速度与激情》系列</h4><ul>
+<li><strong>主演</strong>: 范·迪塞尔</li>
+<li><strong>特色</strong>: 赛车、动作、兄弟情</li>
+<li><strong>推荐</strong>: 《速度与激情7》- 保罗·沃克告别作</li>
+</ul>
+<h4 id="《007》系列"><a href="#《007》系列" class="headerlink" title="《007》系列"></a>《007》系列</h4><ul>
+<li><strong>主演</strong>: 丹尼尔·克雷格</li>
+<li><strong>特色</strong>: 英国特工，高科技装备</li>
+<li><strong>推荐</strong>: 《007：无暇赴死》- 克雷格谢幕作</li>
+</ul>
+<h3 id="😂-喜剧片精选"><a href="#😂-喜剧片精选" class="headerlink" title="😂 喜剧片精选"></a>😂 喜剧片精选</h3><h4 id="华语喜剧"><a href="#华语喜剧" class="headerlink" title="华语喜剧"></a>华语喜剧</h4><ul>
+<li><strong>《功夫》</strong> - 周星驰经典，功夫+喜剧完美融合</li>
+<li><strong>《唐伯虎点秋香》</strong> - 经典古装喜剧</li>
+<li><strong>《美人鱼》</strong> - 环保主题，幽默深刻</li>
+</ul>
+<h4 id="欧美喜剧"><a href="#欧美喜剧" class="headerlink" title="欧美喜剧"></a>欧美喜剧</h4><ul>
+<li><strong>《宿醉》</strong> - 好友团游爆笑之旅</li>
+<li><strong>《超级无敌追女仔》</strong> - 劳合·格雷斯经典</li>
+<li><strong>《辣手保姆》</strong> - 家庭喜剧，温馨搞笑</li>
+</ul>
+<h3 id="🧠-科幻片佳作"><a href="#🧠-科幻片佳作" class="headerlink" title="🧠 科幻片佳作"></a>🧠 科幻片佳作</h3><h4 id="时间循环主题"><a href="#时间循环主题" class="headerlink" title="时间循环主题"></a>时间循环主题</h4><ul>
+<li><strong>《土拨鼠之日》</strong> - 时间循环的经典</li>
+<li><strong>《源代码》</strong> - 8分钟内拯救世界</li>
+<li><strong>《明日边缘》</strong> - 军事题材科幻片</li>
+</ul>
+<h4 id="太空探索"><a href="#太空探索" class="headerlink" title="太空探索"></a>太空探索</h4><ul>
+<li><strong>《地心引力》</strong> - 太空生存惊悚片</li>
+<li><strong>《火星救援》</strong> - 马特·达蒙火星求生</li>
+<li><strong>《流浪地球》</strong> - 中国科幻里程碑</li>
+</ul>
+<h3 id="❤️-爱情片推荐"><a href="#❤️-爱情片推荐" class="headerlink" title="❤️ 爱情片推荐"></a>❤️ 爱情片推荐</h3><h4 id="经典爱情"><a href="#经典爱情" class="headerlink" title="经典爱情"></a>经典爱情</h4><ul>
+<li><strong>《泰坦尼克号》</strong> - 永恒的爱情经典</li>
+<li><strong>《罗马假日》</strong> - 奥黛丽·赫本成名作</li>
+<li><strong>《卡萨布兰卡》</strong> - 黑白电影时代经典</li>
+</ul>
+<h4 id="现代爱情"><a href="#现代爱情" class="headerlink" title="现代爱情"></a>现代爱情</h4><ul>
+<li><strong>《爱在日落黄昏时》</strong> - 对话式爱情片</li>
+<li><strong>《500天夏天》</strong> - 非线性叙事爱情故事</li>
+<li><strong>《La La Land》</strong> - 音乐+爱情+梦想</li>
+</ul>
+<h2 id="🌍-按国家分类"><a href="#🌍-按国家分类" class="headerlink" title="🌍 按国家分类"></a>🌍 按国家分类</h2><h3 id="🇨🇳-华语电影"><a href="#🇨🇳-华语电影" class="headerlink" title="🇨🇳 华语电影"></a>🇨🇳 华语电影</h3><ul>
+<li><strong>《霸王别姬》</strong> - 陈凯歌导演，张国荣经典</li>
+<li><strong>《英雄本色》</strong> - 吴宇森导演，港片经典</li>
+<li><strong>《让子弹飞》</strong> - 姜文导演，黑色幽默</li>
+<li><strong>《我不是药神》</strong> - 现实题材，社会意义深刻</li>
+</ul>
+<h3 id="🇯🇵-日本电影"><a href="#🇯🇵-日本电影" class="headerlink" title="🇯🇵 日本电影"></a>🇯🇵 日本电影</h3><ul>
+<li><strong>《千与千寻》</strong> - 宫崎骏杰作</li>
+<li><strong>《你的名字》</strong> - 新海诚青春动画</li>
+<li><strong>《告白》</strong> - 震撼的校园复仇片</li>
+<li><strong>《小森林》</strong> - 治愈系美食电影</li>
+</ul>
+<h3 id="🇰🇷-韩国电影"><a href="#🇰🇷-韩国电影" class="headerlink" title="🇰🇷 韩国电影"></a>🇰🇷 韩国电影</h3><ul>
+<li><strong>《寄生虫》</strong> - 奥斯卡最佳影片</li>
+<li><strong>《釜山行》</strong> - 丧尸片精品</li>
+<li><strong>《杀人回忆》</strong> - 奉俊昊导演经典</li>
+<li><strong>《小姐》</strong> - 朴赞郁导演，情色惊悚片</li>
+</ul>
+<h3 id="🇺🇸-好莱坞电影"><a href="#🇺🇸-好莱坞电影" class="headerlink" title="🇺🇸 好莱坞电影"></a>🇺🇸 好莱坞电影</h3><ul>
+<li><strong>《教父》系列</strong> - 黑帮片巅峰</li>
+<li><strong>《指环王》系列</strong> - 奇幻史诗</li>
+<li><strong>《黑暗骑士》</strong> - 超级英雄电影巅峰</li>
+<li><strong>《阿凡达》</strong> - 视觉效果革命</li>
+</ul>
+<h2 id="🆓-免费观影网站推荐"><a href="#🆓-免费观影网站推荐" class="headerlink" title="🆓 免费观影网站推荐"></a>🆓 免费观影网站推荐</h2><h3 id="🎬-中文免费电影网站"><a href="#🎬-中文免费电影网站" class="headerlink" title="🎬 中文免费电影网站"></a>🎬 中文免费电影网站</h3><h4 id="1-免费影视网"><a href="#1-免费影视网" class="headerlink" title="1. 免费影视网"></a>1. <strong>免费影视网</strong></h4><blockquote>
+<p>网址：<a target="_blank" rel="noopener" href="http://www.mfys8.com/">www.mfys8.com</a></p>
+</blockquote>
+<ul>
+<li>完全免费观看</li>
+<li>高清画质</li>
+<li>更新速度快</li>
+</ul>
+<h4 id="2-在线之家"><a href="#2-在线之家" class="headerlink" title="2. 在线之家"></a>2. <strong>在线之家</strong></h4><blockquote>
+<p>网址：<a target="_blank" rel="noopener" href="http://www.zxztv.com/">www.zxztv.com</a></p>
+</blockquote>
+<ul>
+<li>无需注册</li>
+<li>资源丰富</li>
+<li>支持手机端</li>
+</ul>
+<h4 id="3-极速影院"><a href="#3-极速影院" class="headerlink" title="3. 极速影院"></a>3. <strong>极速影院</strong></h4><blockquote>
+<p>网址：<a target="_blank" rel="noopener" href="http://www.jisuyy.com/">www.jisuyy.com</a></p>
+</blockquote>
+<ul>
+<li>播放流畅</li>
+<li>分类清晰</li>
+<li>搜索方便</li>
+</ul>
+<h4 id="4-秋霞电影网"><a href="#4-秋霞电影网" class="headerlink" title="4. 秋霞电影网"></a>4. <strong>秋霞电影网</strong></h4><blockquote>
+<p>网址：<a target="_blank" rel="noopener" href="http://www.qiuxia360.com/">www.qiuxia360.com</a></p>
+</blockquote>
+<ul>
+<li>老牌免费网站</li>
+<li>电影资源齐全</li>
+<li>支持下载</li>
+</ul>
+<h4 id="5-神马影院"><a href="#5-神马影院" class="headerlink" title="5. 神马影院"></a>5. <strong>神马影院</strong></h4><blockquote>
+<p>网址：<a target="_blank" rel="noopener" href="http://www.smdyy.cc/">www.smdyy.cc</a></p>
+</blockquote>
+<ul>
+<li>界面简洁</li>
+<li>广告少</li>
+<li>加载速度快</li>
+</ul>
+<h4 id="6-吉吉影音"><a href="#6-吉吉影音" class="headerlink" title="6. 吉吉影音"></a>6. <strong>吉吉影音</strong></h4><blockquote>
+<p>网址：<a target="_blank" rel="noopener" href="http://www.jijidv.com/">www.jijidv.com</a></p>
+</blockquote>
+<ul>
+<li>支持多种格式</li>
+<li>播放稳定</li>
+<li>资源更新及时</li>
+</ul>
+<h3 id="📺-在线观影平台"><a href="#📺-在线观影平台" class="headerlink" title="📺 在线观影平台"></a>📺 在线观影平台</h3><h4 id="🎬-主流平台"><a href="#🎬-主流平台" class="headerlink" title="🎬 主流平台"></a>🎬 主流平台</h4><ul>
+<li><strong>Netflix</strong> - 全球最大流媒体平台</li>
+<li><strong>Amazon Prime</strong> - 亚马逊影视服务</li>
+<li><strong>Disney+</strong> - 迪士尼专属内容</li>
+<li><strong>HBO Max</strong> - 高品质剧集电影</li>
+</ul>
+<h4 id="🇨🇳-国内平台"><a href="#🇨🇳-国内平台" class="headerlink" title="🇨🇳 国内平台"></a>🇨🇳 国内平台</h4><ul>
+<li><strong>爱奇艺</strong> - 丰富的华语影视库</li>
+<li><strong>腾讯视频</strong> - 腾讯系影视平台</li>
+<li><strong>优酷</strong> - 阿里巴巴旗下平台</li>
+<li><strong>哔哩哔哩</strong> - 年轻人喜爱的平台</li>
+</ul>
+<h4 id="🆓-公版资源"><a href="#🆓-公版资源" class="headerlink" title="🆓 公版资源"></a>🆓 公版资源</h4><ul>
+<li><strong>YouTube</strong> - 部分免费电影内容</li>
+<li><strong>公版电影</strong> - 版权过期的经典电影</li>
+<li><strong>Internet Archive</strong> - 大量公版影视资源</li>
+<li><strong>Kanopy</strong> - 通过图书馆免费访问</li>
+</ul>
+<h2 id="🌟-最新热门电影"><a href="#🌟-最新热门电影" class="headerlink" title="🌟 最新热门电影"></a>🌟 最新热门电影</h2><h3 id="🎬-2024年度佳作"><a href="#🎬-2024年度佳作" class="headerlink" title="🎬 2024年度佳作"></a>🎬 2024年度佳作</h3><h4 id="1-《奥本海默》-2023"><a href="#1-《奥本海默》-2023" class="headerlink" title="1. 《奥本海默》 - 2023"></a>1. <strong>《奥本海默》</strong> - 2023</h4><ul>
+<li><strong>导演</strong>: 克里斯托弗·诺兰</li>
+<li><strong>主演</strong>: 基里安·墨菲</li>
+<li><strong>评分</strong>: 8.4&#x2F;10</li>
+<li><strong>看点</strong>: 原子弹之父的传奇人生</li>
+</ul>
+<h4 id="2-《芭比》-2023"><a href="#2-《芭比》-2023" class="headerlink" title="2. 《芭比》 - 2023"></a>2. <strong>《芭比》</strong> - 2023</h4><ul>
+<li><strong>导演</strong>: 格蕾塔·葛韦格</li>
+<li><strong>主演</strong>: 玛格特·罗比</li>
+<li><strong>评分</strong>: 7.0&#x2F;10</li>
+<li><strong>看点</strong>: 粉色世界的讽刺喜剧</li>
+</ul>
+<h4 id="3-《流浪地球2》-2023"><a href="#3-《流浪地球2》-2023" class="headerlink" title="3. 《流浪地球2》 - 2023"></a>3. <strong>《流浪地球2》</strong> - 2023</h4><ul>
+<li><strong>导演</strong>: 郭帆</li>
+<li><strong>主演</strong>: 吴京、刘德华</li>
+<li><strong>评分</strong>: 8.3&#x2F;10</li>
+<li><strong>看点</strong>: 中国科幻新高度</li>
+</ul>
+<h3 id="🎥-即将上映期待"><a href="#🎥-即将上映期待" class="headerlink" title="🎥 即将上映期待"></a>🎥 即将上映期待</h3><h4 id="1-《阿凡达3》"><a href="#1-《阿凡达3》" class="headerlink" title="1. 《阿凡达3》"></a>1. <strong>《阿凡达3》</strong></h4><ul>
+<li><strong>上映</strong>: 2024年12月</li>
+<li><strong>期待度</strong>: ⭐⭐⭐⭐⭐</li>
+<li><strong>看点</strong>: 视觉效果再次突破</li>
+</ul>
+<h4 id="2-《复仇者联盟5》"><a href="#2-《复仇者联盟5》" class="headerlink" title="2. 《复仇者联盟5》"></a>2. <strong>《复仇者联盟5》</strong></h4><ul>
+<li><strong>上映</strong>: 2025年5月</li>
+<li><strong>期待度</strong>: ⭐⭐⭐⭐⭐</li>
+<li><strong>看点</strong>: 漫威新阶段开启</li>
+</ul>
+<h2 id="🎥-观影小贴士"><a href="#🎥-观影小贴士" class="headerlink" title="🎥 观影小贴士"></a>🎥 观影小贴士</h2><h3 id="📊-如何选择好电影"><a href="#📊-如何选择好电影" class="headerlink" title="📊 如何选择好电影"></a>📊 如何选择好电影</h3><ol>
+<li><strong>参考评分</strong> - IMDb、豆瓣等平台评分</li>
+<li><strong>看预告片</strong> - 了解电影风格和质量</li>
+<li><strong>阅读影评</strong> - 专业影评人的观点</li>
+<li><strong>关注导演</strong> - 优秀导演的作品通常有保障</li>
+</ol>
+<h3 id="🍿-最佳观影体验"><a href="#🍿-最佳观影体验" class="headerlink" title="🍿 最佳观影体验"></a>🍿 最佳观影体验</h3><ol>
+<li><strong>设备选择</strong> - 大屏幕电视或投影仪</li>
+<li><strong>音响系统</strong> - 环绕声提升沉浸感</li>
+<li><strong>观影环境</strong> - 调暗灯光，避免干扰</li>
+<li><strong>观影时间</strong> - 选择合适的时间段</li>
+</ol>
+<h3 id="🎬-观影记录"><a href="#🎬-观影记录" class="headerlink" title="🎬 观影记录"></a>🎬 观影记录</h3><p>推荐使用以下App记录观影：</p>
+<ul>
+<li><strong>豆瓣</strong> - 华语地区最受欢迎</li>
+<li><strong>Letterboxd</strong> - 国际影迷社区</li>
+<li><strong>IMDb</strong> - 官方电影数据库</li>
+</ul>
+<h2 id="💬-电影交流"><a href="#💬-电影交流" class="headerlink" title="💬 电影交流"></a>💬 电影交流</h2><p>欢迎在评论区分享你的观影心得！</p>
+<ul>
+<li>你最喜欢的电影是什么？</li>
+<li>有什么电影推荐给我吗？</li>
+<li>让我们一起讨论电影的魅力！</li>
+</ul>
+<blockquote>
+<p>🎬 <strong>电影是造梦的艺术，每一部都是一段人生旅程！</strong></p>
+</blockquote>
+<hr>
+<p><strong>🍿 电影库持续更新中，欢迎常来发现新电影！</strong></p>
+</div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src= "/img/loading.gif" data-lazy-src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">LSS</div><div class="author-info-description">一个专注于技术分享和生活记录的个人博客</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/MIXUULSS"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/MIXUULSS" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:mixuu10001@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到我的博客！这里记录生活，分享技术，感谢您的访问～</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2025/03/01/%E5%8D%9A%E5%AE%A2%E5%8A%9F%E8%83%BD%E5%B1%95%E7%A4%BA%E4%B8%8E%E6%95%99%E7%A8%8B/" title="博客功能展示与使用教程"><img src= "/img/loading.gif" data-lazy-src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="博客功能展示与使用教程"/></a><div class="content"><a class="title" href="/2025/03/01/%E5%8D%9A%E5%AE%A2%E5%8A%9F%E8%83%BD%E5%B1%95%E7%A4%BA%E4%B8%8E%E6%95%99%E7%A8%8B/" title="博客功能展示与使用教程">博客功能展示与使用教程</a><time datetime="2025-03-01T06:00:00.000Z" title="发表于 2025-03-01 14:00:00">2025-03-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/03/01/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="欢迎来到我的博客"><img src= "/img/loading.gif" data-lazy-src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="欢迎来到我的博客"/></a><div class="content"><a class="title" href="/2025/03/01/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="欢迎来到我的博客">欢迎来到我的博客</a><time datetime="2025-03-01T05:00:00.000Z" title="发表于 2025-03-01 13:00:00">2025-03-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/03/15/2025-3-3%E7%AC%AC%E4%B8%80%E7%AF%87Blog/" title="CSS动画完全指南：从原理到实战"><img src= "/img/loading.gif" data-lazy-src="/images/css-animation-cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CSS动画完全指南：从原理到实战"/></a><div class="content"><a class="title" href="/2024/03/15/2025-3-3%E7%AC%AC%E4%B8%80%E7%AF%87Blog/" title="CSS动画完全指南：从原理到实战">CSS动画完全指南：从原理到实战</a><time datetime="2024-03-14T16:00:00.000Z" title="发表于 2024-03-15 00:00:00">2024-03-15</time></div></div></div></div><div class="card-widget" id="card-newest-comments"><div class="item-headline"><i class="fas fa-comment-dots"></i><span>最新评论</span></div><div class="aside-list"><span>加载中...</span></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%95%99%E7%A8%8B/"><span class="card-category-list-name">教程</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%94%9F%E6%B4%BB/"><span class="card-category-list-name">生活</span><span class="card-category-list-count">1</span></a></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 1.1em; color: #999">前端</a> <a href="/tags/%E5%BC%80%E5%A7%8B/" style="font-size: 1.1em; color: #999">开始</a> <a href="/tags/CSS/" style="font-size: 1.1em; color: #999">CSS</a> <a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 1.1em; color: #999">生活</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 1.5em; color: #99a9bf">教程</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 1.5em; color: #99a9bf">博客</a> <a href="/tags/%E5%8A%9F%E8%83%BD/" style="font-size: 1.1em; color: #999">功能</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/03/">
+            <span class="card-archive-list-date">
+              三月 2025
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2024/03/">
+            <span class="card-archive-list-date">
+              三月 2024
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">3</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">2.1k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-03-01T15:00:55.719Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2025 - 2026 By LSS</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.3.4</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@5.3.4/source/js/utils.min.js"></script><script src="https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@5.3.4/source/js/main.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.36/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.iife.min.js"></script><div class="js-pjax"><script>(() => {
+  const runMermaid = ele => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+    ele.forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = `%%{init:{ 'theme':'${theme}'}}%%\n`
+      const mermaidID = `mermaid-${index}`
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+      const renderMermaid = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      // mermaid v9 and v10 compatibility
+      typeof renderFn === 'string' ? renderMermaid(renderFn) : renderFn.then(({ svg }) => renderMermaid(svg))
+    })
+  }
+
+  const codeToMermaid = () => {
+    const codeMermaidEle = document.querySelectorAll('pre > code.mermaid')
+    if (codeMermaidEle.length === 0) return
+
+    codeMermaidEle.forEach(ele => {
+      const preEle = document.createElement('pre')
+      preEle.className = 'mermaid-src'
+      preEle.hidden = true
+      preEle.textContent = ele.textContent
+      const newEle = document.createElement('div')
+      newEle.className = 'mermaid-wrap'
+      newEle.appendChild(preEle)
+      ele.parentNode.replaceWith(newEle)
+    })
+  }
+
+  const loadMermaid = () => {
+    if (true) codeToMermaid()
+    const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+    if ($mermaid.length === 0) return
+
+    const runMermaidFn = () => runMermaid($mermaid)
+    btf.addGlobalFn('themeChange', runMermaidFn, 'mermaid')
+    window.loadMermaid ? runMermaidFn() : btf.getScript('https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.min.js').then(runMermaidFn)
+  }
+
+  btf.addGlobalFn('encrypt', loadMermaid, 'mermaid')
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = null
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo.cuci.cc',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(res => {
+      countELement.textContent = res[0].count
+    }).catch(err => {
+      console.error(err)
+    })
+  }
+
+  const init = (el = document, path = location.pathname) => {
+    twikoo.init({
+      el: el.querySelector('#twikoo-wrap'),
+      envId: 'https://twikoo.cuci.cc',
+      region: '',
+      onCommentLoaded: () => {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      },
+      ...option,
+      path: isShuoshuo ? path : (option && option.path) || path
+    })
+
+    GLOBAL_CONFIG_SITE.pageType === 'post' && getCount()
+
+    isShuoshuo && (window.shuoshuoComment.destroyTwikoo = () => {
+      if (el.children.length) {
+        el.innerHTML = ''
+        el.classList.add('no-comment')
+      }
+    })
+  }
+
+  const loadTwikoo = (el, path) => {
+    if (typeof twikoo === 'object') setTimeout(() => init(el, path), 0)
+    else btf.getScript('https://cdn.jsdelivr.net/npm/twikoo@1.6.41/dist/twikoo.all.min.js').then(() => init(el, path))
+  }
+
+  if (isShuoshuo) {
+    'Twikoo' === 'Twikoo'
+      ? window.shuoshuoComment = { loadComment: loadTwikoo }
+      : window.loadOtherComment = loadTwikoo
+    return
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = loadTwikoo
+  }
+})()</script></div><script>window.newestComments = {
+  changeContent: content => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
+    content = content.replace(/<code>.*?<\/code>/gi, '[代码]') // replace code
+    content = content.replace(/<[^>]+>/g, "") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0, 150) + '...'
+    }
+    return content
+  },
+
+  generateHtml: (array, ele) => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class="aside-list-item">'
+
+        if (true && array[i].avatar) {
+          const imgAttr = 'data-lazy-src'
+          const lazyloadNative = ''
+          result += `<a href="${array[i].url}" class="thumbnail"><img ${imgAttr}="${array[i].avatar}" alt="${array[i].nick}" ${lazyloadNative}></a>`
+        }
+
+        result += `<div class="content">
+        <a class="comment" href="${array[i].url}" title="${array[i].content}">${array[i].content}</a>
+        <div class="name"><span>${array[i].nick} / </span><time datetime="${array[i].date}">${btf.diffDate(array[i].date, true)}</time></div>
+        </div></div>`
+      }
+    } else {
+      result += '暂无评论'
+    }
+
+    ele.innerHTML = result
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh(ele)
+  },
+
+  newestCommentInit: (name, getComment) => {
+    const $dom = document.querySelector('#card-newest-comments .aside-list')
+    if ($dom) {
+      const data = btf.saveToLocal.get(name)
+      if (data) {
+        newestComments.generateHtml(JSON.parse(data), $dom)
+      } else {
+        getComment($dom)
+      }
+    }
+  },
+
+  run: (name, getComment) => {
+    newestComments.newestCommentInit(name, getComment)
+    btf.addGlobalFn('pjaxComplete', () => newestComments.newestCommentInit(name, getComment), name)
+  }
+}</script><script>window.addEventListener('load', () => {
+  const keyName = 'twikoo-newest-comments'
+  const { changeContent, generateHtml, run } = window.newestComments
+
+  const getComment = ele => {
+    const runTwikoo = () => {
+      twikoo.getRecentComments({
+        envId: 'https://twikoo.cuci.cc',
+        region: '',
+        pageSize: 6,
+        includeReply: true
+      }).then(res => {
+        const twikooArray = res.map(e => {
+          return {
+            'content': changeContent(e.comment),
+            'avatar': e.avatar,
+            'nick': e.nick,
+            'url': e.url + '#' + e.id,
+            'date': new Date(e.created).toISOString()
+          }
+        })
+
+        btf.saveToLocal.set(keyName, JSON.stringify(twikooArray), 10/(60*24))
+        generateHtml(twikooArray, ele)
+      }).catch(err => {
+        console.error(err)
+        ele.textContent= "无法获取评论，请确认相关配置是否正确"
+      })
+    }
+
+    if (typeof twikoo === 'object') {
+      runTwikoo()
+    } else {
+      btf.getScript('https://cdn.jsdelivr.net/npm/twikoo@1.6.41/dist/twikoo.all.min.js').then(runTwikoo)
+    }
+  }
+
+  run(keyName, getComment)
+})</script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.4/dist/canvas-fluttering-ribbon.min.js"></script><script id="canvas_nest" defer="defer" color="135,206,250" opacity="0.5" zIndex="-1" count="99" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.4/dist/canvas-nest.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.4/dist/click-heart.min.js" async="async" mobile="false"></script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script>(() => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => fn())
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      const usePjax = true
+      true 
+        ? (usePjax ? pjax.loadUrl('/404.html') : window.location.href = '/404.html')
+        : window.location.href = e.request.responseURL
+    }
+  })
+})()</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章..." type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@5.3.4/source/js/search/local-search.min.js"></script></div></div></body></html>
