@@ -8,7 +8,7 @@ description: 一个专注于技术分享和生活记录的个人博客
 keywords: 技术,博客,生活,编程,Hexo
 author: LSS
 language: zh-CN
-timezone: ''
+timezone: 'Asia/Shanghai'
 
 # URL
 url: https://mixuulss.github.io
@@ -16,7 +16,7 @@ root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
   trailing_index: true
-  trailing_html: true
+  trailing_html: false
 
 # Directory
 source_dir: source
@@ -36,32 +36,50 @@ external_link:
   enable: true
   field: site
   exclude: ''
-
-# Filename case
 filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+syntax_highlighter: highlight.js
+highlight:
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  preprocess: true
+  line_number: true
+  tab_replace: ''
 
-# Render
-marked:
-  gfm: false
-  breaks: false
-  pedantic: false
-  sanitize: false
-  smartLists: true
-  smartypants: false
+# Home page setting
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
 
-# Server
-port: 4000
-server_ip: 0.0.0.0
-logger: false
-logger_format: ''
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Metadata elements
+meta_generator: true
 
 # Date / Time format
-date_format: YYYY-MM-DD HH:mm:ss
+date_format: YYYY-MM-DD
 time_format: HH:mm:ss
+updated_option: 'mtime'
 
 # Pagination
 per_page: 10
 pagination_dir: page
+
+# Include / Exclude file(s)
+include:
+exclude:
+ignore:
 
 # Extensions
 theme: butterfly
@@ -69,6 +87,5 @@ theme: butterfly
 # Deployment
 deploy:
   type: git
-  repo: https://github.com/MIXUULSS/MIXUULSS.github.io
+  repo: https://github.com/MIXUULSS/MIXUULSS.github.io.git
   branch: master
-  message: 'Site updated: {{ now("YYYY-MM-DD HH:mm:ss") }}'
